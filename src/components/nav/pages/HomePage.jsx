@@ -2,12 +2,11 @@ import React, { useState, useMemo, useContext } from 'react';
 import { Container, Row, Col, Card, Button } from 'react-bootstrap';
 import RequirementBox from './RequirementBox';
 import { DataContext } from '../../DataContext';
-import { useNavigate } from 'react-router-dom';
 import { useSavedCourseIds, makeKey } from './useSavedCourseIds';
 
 export default function HomePage() {
 
-    const { courses, error } = useContext(DataContext);
+    const { courses } = useContext(DataContext);
     const [filteredCourses, setFilteredCourses] = useState([]); //filterd courses after clicking on 'search'
 
     const [hasSearched, setHasSearched] = useState(false); //identify whether 'search' button is clicked
@@ -18,7 +17,7 @@ export default function HomePage() {
 
     const [expandedCourses, setExpandedCourses] = useState({}); //third round search for 'OR'; second round search for 'AND'
 
-    const { savedIds, saveId, isSaved } = useSavedCourseIds();
+    const { saveId, isSaved } = useSavedCourseIds();
 
 
 
@@ -113,7 +112,7 @@ export default function HomePage() {
                                 <>
                                     <p>This tool can help UW-Madison students to find general education / breadth courses on other schools.</p>
                                     <p>Hover your mouse over the “i” icon to view helpful tips.</p>
-                                    <p>Log in your account to save results.</p>
+                                    <p>Save courses locally to revisit them later.</p>
 
                                 </>
 
