@@ -136,7 +136,7 @@ consult an academic advisor.
 **Xuantao (Jeff) Zhang**
 
 - M.S. in Computer Science student at UCLA
-- UW-Madison graduate in Computer Sciences, Mathematics (Programming and
-  Computing), and Statistics
+- B.S in Computer Sciences, Mathematics (Programming and
+  Computing), and Statistics at UW-Madison, graduated with Distinction
 
 Course supervisor: **Cole Nelson**
